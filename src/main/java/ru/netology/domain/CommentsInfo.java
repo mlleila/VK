@@ -57,4 +57,12 @@ public class CommentsInfo {
     public void setCanDelete(boolean canDelete) {
         this.canDelete = canDelete;
     }
+
+    public boolean getCanEdit() {
+        return canEdit;
+    }
+
+    public void setCanEdit(boolean canEdit) {
+        this.canEdit = canEdit;
+    }
 }

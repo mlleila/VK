@@ -1,4 +1,5 @@
 package manager;
+import ru.netology.domain.CommentsInfo;
 import ru.netology.domain.Post;
 
 public class PostManager {
@@ -8,6 +9,7 @@ public class PostManager {
     private boolean owners_only;
     private int count;
     private int offset;
+    private Post[] post;
 
     public Post[] search () {
         return search();

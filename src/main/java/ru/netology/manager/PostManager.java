@@ -1,9 +1,9 @@
-package manager;
+package ru.netology.manager;
 import ru.netology.domain.CommentsInfo;
 import ru.netology.domain.Post;
 
 public class PostManager {
-    private int owner_id;
+    private int ownerId;
     private String domain;
     private String query;
     private boolean owners_only;
@@ -11,11 +11,11 @@ public class PostManager {
     private int offset;
     private Post[] post;
 
-    public Post[] search () {
-        return search();
+    public Post[] search (int ownerId) {
+        return search(ownerId);
     }
 
-    public Post[] getText() {
+    public Post[] delete(Post[] post) {
         return null;
     }
 }

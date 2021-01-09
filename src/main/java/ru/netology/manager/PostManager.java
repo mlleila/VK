@@ -3,20 +3,12 @@ import ru.netology.domain.CommentsInfo;
 import ru.netology.domain.Post;
 
 public class PostManager {
-    private int ownerId;
-    private String domain;
-    private String query;
-    private boolean owners_only;
-    private int count;
-    private int offset;
     private Post[] post;
 
-    public Post[] search (int ownerId) {
-        return search(ownerId);
+    public Post[] search (int ownerId, String domain, String query, boolean owners_only, int count, int offset) {
+        return search(1, "domain", "query", true, 1, 0);
     }
 
-    public Post[] delete(Post[] post) {
-        return null;
-    }
+    public void delete(int ownerId, int postId) { }
 }
 
